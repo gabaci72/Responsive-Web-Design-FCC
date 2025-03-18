@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "GURSEL"
-    ]
+    ],
+    "zencoder.enableRepoIndexing": true
 }
