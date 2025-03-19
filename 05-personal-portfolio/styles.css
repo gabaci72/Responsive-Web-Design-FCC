@@ -1,0 +1,216 @@
+/* Personal Portfolio specific styles */
+:root {
+    --main-blue: #45567d;
+    --main-red: #be3144;
+    --main-gray: #303841;
+    --main-white: #f0f0f0;
+}
+
+.project-content {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+}
+
+/* Welcome section */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+}
+
+.welcome-section h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+/* Projects section */
+.projects-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 50px;
+    font-size: 2.5rem;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.project-tile {
+    background-color: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--main-white);
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    height: calc(100% - 50px);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .code {
+    color: var(--accent-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--main-white);
+    background-color: var(--main-gray);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+.btn-show-all {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.btn-show-all i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.btn-show-all:hover i {
+    transform: translateX(5px);
+}
+
+/* Contact section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 20px;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+}
+
+.contact-section-header h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contact-section-header p {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.contact-details {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .welcome-section h2 {
+        font-size: 2.5rem;
+    }
+    
+    .welcome-section p {
+        font-size: 1.5rem;
+    }
+    
+    .projects-section-header {
+        font-size: 2rem;
+    }
+    
+    .contact-section-header h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-section-header p {
+        font-size: 1.3rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-section h2 {
+        font-size: 2rem;
+    }
+    
+    .welcome-section p {
+        font-size: 1.2rem;
+    }
+    
+    .projects-section-header {
+        font-size: 1.8rem;
+    }
+    
+    .contact-section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-section-header p {
+        font-size: 1.1rem;
+    }
+}

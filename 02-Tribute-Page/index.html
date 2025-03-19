@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Albert Einstein</title>
- <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Einstein - Tribute Page</title>
+    <link rel="stylesheet" href="../styles-project.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
- <main id="main">
- <h1 id="title">Albert Einstein</h1>
- <div id="img-div">
- <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Albert_Einstein_writing_on_a_blackboard_in_Pasadena_%281931%29.jpg/960px-Albert_Einstein_writing_on_a_blackboard_in_Pasadena_%281931%29.jpg" alt="Albert Einstein Photo">
- <figcaption id="img-caption"><strong>20. Genius of the Century</strong></figcaption>
-</div>
-<div id="tribute-info">
-<p><strong>Albert Einstein (1879-1955)</strong> is a <strong>German-born theoretical physicist</strong> known for his <strong>theory of relativity</strong> and <strong><em>E=mc²</em></strong> equation</strong>. <strong>He won the Nobel Prize in Physics in 1921 for his discovery of the law of the photoelectric effect</strong>.</p>
-<h3>Life and Career</h3>
-<ul>
-<li><strong>Born in Germany in 1879</strong>.</li>
-<li><strong>Educated at the Swiss Federal Polytechnic</strong>.</li>
-<li><strong>Published four groundbreaking papers in 1905, known as the "Miracle Year"</strong>.</li>
-<li><strong>Worked at the Swiss Patent Office from 1902 to 1909</strong>.</li>
-<li><strong>Emigrated to the United States in 1933</strong>.</li>
-<li><strong>Became a resident scientist at the Institute for Advanced Study in Princeton</strong>.</li>
-<li><strong>Accepted US citizenship in 1940</strong>.</li>
-<li><strong>He died in Princeton in 1955</strong>.</li>
-</ul>
-<h3>Scientific Contributions</h3>
-<ul>
-<li><strong>Special Relativity (1905):</strong> He showed that time and space are relative.</li>
-<li><strong>Photoelectric Effect (1905):</strong> He explained the granular nature of light.</li>
-<li><strong><em>E=mc²</em></strong>: He formulated the equivalence of mass and energy.</li>
-<li><strong>General Relativity (1916):</strong> He defined gravity as the curvature of space-time.</li>
-<li><strong>Brownian Motion (1905):</strong> He provided evidence for the existence of molecules.</li>
-<li><strong>Bose-Einstein Statistics (1924):</strong> He described the statistical behavior of certain particles [1].</li>
-</ul>
-<h3>Personality and Views</h3>
-<ul>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-laptop-code"></i> Projects
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank"><i class="fab fa-free-code-camp"></i> freeCodeCamp</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<li><strong>He had no traditional religious beliefs</strong> .</li>
-<li><strong>He was passionate about music, especially the violin</strong> .</li>
-</ul>
-<h3>Legacy</h3>
-<p><strong>Albert Einstein</strong> <strong>revolutionized the field of physics</strong> and is considered <strong>one of the greatest scientists of the 20th century</strong>. <strong>His work is the foundation of modern science</strong>.</p>
-<p><strong>For More Information:</strong> <a id="tribute-link" href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank" rel="noopener">Albert Einstein - Wikipedia</a></p>
-</div>
-</main>
+    <header>
+        <div class="container">
+            <h1>Tribute Page</h1>
+            <p>A tribute page dedicated to Albert Einstein</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="project-content" id="main">
+            <h1 id="title">Albert Einstein</h1>
+
+            <figure id="img-div">
+                <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Albert_Einstein_writing_on_a_blackboard_in_Pasadena_%281931%29.jpg/960px-Albert_Einstein_writing_on_a_blackboard_in_Pasadena_%281931%29.jpg" alt="Albert Einstein Photo">
+                <figcaption id="img-caption"><strong>20th Century Genius</strong></figcaption>
+            </figure>
+
+            <div id="tribute-info">
+                <p class="intro"><strong>Albert Einstein (1879-1955)</strong> is a <strong>German-born theoretical physicist</strong> known for his <strong>theory of relativity</strong> and <strong><em>E=mc²</em></strong> equation</strong>. <strong>He won the Nobel Prize in Physics in 1921 for his discovery of the law of the photoelectric effect</strong>.</p>
+
+                <section class="info-section">
+                    <h3>Life and Career</h3>
+                    <ul>
+                        <li><strong>Born in Germany in 1879</strong>.</li>
+                        <li><strong>Educated at the Swiss Federal Polytechnic</strong>.</li>
+                        <li><strong>Published four groundbreaking papers in 1905, known as the "Miracle Year"</strong>.</li>
+                        <li><strong>Worked at the Swiss Patent Office from 1902 to 1909</strong>.</li>
+                        <li><strong>Emigrated to the United States in 1933</strong>.</li>
+                        <li><strong>Became a resident scientist at the Institute for Advanced Study in Princeton</strong>.</li>
+                        <li><strong>Accepted US citizenship in 1940</strong>.</li>
+                        <li><strong>He died in Princeton in 1955</strong>.</li>
+                    </ul>
+                </section>
+
+                <section class="info-section">
+                    <h3>Scientific Contributions</h3>
+                    <ul>
+                        <li><strong>Special Relativity (1905):</strong> He showed that time and space are relative.</li>
+                        <li><strong>Photoelectric Effect (1905):</strong> He explained the granular nature of light.</li>
+                        <li><strong><em>E=mc²</em></strong>: He formulated the equivalence of mass and energy.</li>
+                        <li><strong>General Relativity (1916):</strong> He defined gravity as the curvature of space-time.</li>
+                        <li><strong>Brownian Motion (1905):</strong> He provided evidence for the existence of molecules.</li>
+                        <li><strong>Bose-Einstein Statistics (1924):</strong> He described the statistical behavior of certain particles.</li>
+                    </ul>
+                </section>
+
+                <section class="info-section">
+                    <h3>Personality and Views</h3>
+                    <ul>
+                        <li><strong>He had no traditional religious beliefs</strong>.</li>
+                        <li><strong>He was passionate about music, especially the violin</strong>.</li>
+                    </ul>
+                </section>
+
+                <section class="info-section">
+                    <h3>Legacy</h3>
+                    <p><strong>Albert Einstein</strong> <strong>revolutionized the field of physics</strong> and is considered <strong>one of the greatest scientists of the 20th century</strong>. <strong>His work is the foundation of modern science</strong>.</p>
+
+                    <blockquote>
+                        <p>"Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."</p>
+                        <cite>-- Albert Einstein</cite>
+                    </blockquote>
+                </section>
+
+                <p class="more-info"><strong>For More Information:</strong> <a id="tribute-link" href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank" rel="noopener">Albert Einstein - Wikipedia</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Ana Sayfaya Dön</a></p>
+            <p>Made by: <strong>GURSEL ABACI</strong></p>
+            <p>Created for freeCodeCamp's Responsive Web Design Certification</p>
+            <p>&copy; 2025 - All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
