@@ -126,9 +126,65 @@ main {
     border-bottom: 3px solid var(--accent-color);
 }
 
+/* Contact section styles */
+.contact-section {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 40px 0;
+    border-top: 4px solid var(--accent-color);
+}
+
+.contact-section-header {
+    margin-bottom: 30px;
+}
+
+.contact-section-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-section-header p {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.contact-details {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: var(--hover-color);
+}
+
+.contact-details i,
+.contact-details svg,
+.contact-details span {
+    margin-right: 10px;
+}
+
+.contact-details:hover {
+    transform: translateY(-5px);
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
 /* Footer styles */
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
     padding: 30px 0;
@@ -160,13 +216,30 @@ footer p {
     header {
         padding: 40px 0;
     }
-    
+
     header h1 {
         font-size: 2rem;
     }
-    
+
     .project-content {
         padding: 20px;
+    }
+
+    .contact-section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section-header p {
+        font-size: 1.1rem;
+    }
+
+    .contact-links {
+        gap: 15px;
+    }
+
+    .contact-details {
+        font-size: 1.1rem;
+        padding: 8px 12px;
     }
 }
 
@@ -176,25 +249,48 @@ footer p {
         height: auto;
         padding: 15px 0;
     }
-    
+
     .nav-links {
         margin-top: 15px;
     }
-    
+
     .nav-links li {
         margin: 0 10px;
     }
-    
+
     header {
         padding: 30px 0;
         margin-top: 30px;
     }
-    
+
     header h1 {
         font-size: 1.8rem;
     }
-    
+
     header p {
+        font-size: 1rem;
+    }
+
+    .contact-section {
+        padding: 30px 0;
+    }
+
+    .contact-section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-section-header p {
+        font-size: 1rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-details {
+        width: 80%;
+        margin: 0 auto;
         font-size: 1rem;
     }
 }
