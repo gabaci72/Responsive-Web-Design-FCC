@@ -12,7 +12,7 @@
     max-width: 1200px;
 }
 
-#navbar {
+#doc-navbar {
     width: 300px;
     height: 100%;
     position: sticky;
@@ -25,28 +25,28 @@
     overflow-y: auto;
 }
 
-#navbar header {
+#doc-navbar header {
     text-align: center;
     padding: 10px 0;
     margin-bottom: 20px;
     border-bottom: 2px solid var(--accent-color);
 }
 
-#navbar h2 {
+#doc-navbar h2 {
     margin: 0;
     font-size: 1.5rem;
 }
 
-#navbar ul {
+#doc-navbar ul {
     list-style: none;
     padding: 0;
 }
 
-#navbar li {
+#doc-navbar li {
     border-bottom: 1px solid var(--border-color);
 }
 
-#navbar li:last-child {
+#doc-navbar li:last-child {
     border-bottom: none;
 }
 
@@ -121,7 +121,7 @@ code {
         flex-direction: column;
     }
     
-    #navbar {
+    #doc-navbar {
         width: 100%;
         position: relative;
         top: 0;
